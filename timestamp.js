@@ -98,6 +98,9 @@ var processDate = function (timestamp) {
     default:
       month = 12;
   }
+  if (time.length != 3) {
+    return {"unix":null,"natural":null};
+  }
   time = new Date(parseInt(time[2]), month, parseInt(time[1].substring(0, time[1].length - 1)));
   if (time == "Invalid Date") {
     console.log("Invalid date.");
