@@ -101,7 +101,7 @@ var processDate = function (timestamp) {
   time = new Date(parseInt(time[2]), month, parseInt(time[1].substring(0, time[1].length - 1)));
   if (time == "Invalid Date") {
     console.log("Invalid date.");
-    return null;
+    return {"unix":null,"natural":null};
   }
   console.log("Natural format date.");
   time = time.getTime() / 1000;
