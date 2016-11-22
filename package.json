@@ -5,7 +5,7 @@
   "main": "timestamp.js",
   "dependencies": {
     "async": "^0.2.10",
-    "express": "^3.2.6",
+    "express": "^3.21.2",
     "git": "^0.1.5",
     "socket.io": "^0.9.17"
   },
@@ -15,5 +15,6 @@
     "start": "node server.js"
   },
   "author": "Algorri",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": "https://github.com/Algorri/fcc-timestamp-service"
 }
